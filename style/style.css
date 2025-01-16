@@ -1,0 +1,236 @@
+@font-face {
+  font-family: "Heavites";
+  src: url(./Heavitas.ttf);
+}
+@font-face {
+  font-family: "Heavites Regular";
+  src: url(./Heavitas-Regular.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-family: "Heavites";
+  font-weight: 100;
+}
+
+body {
+  background-color: #030303;
+}
+
+button {
+  background-color: #242424 !important;
+  border: none !important;
+}
+
+.light {
+  font-family: "Heavites Regular";
+  font-size: 15px;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h1 {
+  font-size: 30px;
+  margin: 0;
+  text-align: center;
+}
+
+.socials {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: fill;
+     object-fit: fill;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-item {
+  z-index: 1;
+}
+
+.nav-link {
+  font-size: 16px;
+  color: #ffffff;
+  transition: color 0.3s ease;
+  z-index: 2;
+}
+
+.banner-section {
+  background-image: url("../images/MCRBanner.png");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+  z-index: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  padding: 0px 30px;
+}
+
+footer p {
+  font-size: 15px;
+}
+
+footer .row {
+  align-items: center;
+}
+
+article h3 {
+  font-size: 20px;
+}
+
+.card {
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  color: white;
+  width: 18rem;
+}
+
+.card img {
+  border-radius: 0;
+}
+
+.card h3 {
+  margin-top: 10px;
+}
+
+.rightside {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.music-card, .gallery-card, .merch-card {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.merch-card h3 {
+  font-size: 20px;
+}
+
+.merch-card h4 {
+  font-family: "Heavites Regular";
+  font-size: 15px;
+  color: #aaaaaa;
+}
+
+.music-card h3 {
+  font-size: 24px;
+}
+
+#pageIndicator {
+  margin: 0px 10px;
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-collapse.show {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.bg-dark-opacity {
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+
+.table {
+  background-color: transparent !important;
+  color: #fff !important;
+  border-collapse: collapse;
+}
+
+.table thead {
+  background-color: #242424 !important;
+}
+
+.table th {
+  font-size: 25px !important;
+  text-transform: uppercase;
+  padding: 15px;
+  color: #fff !important;
+  border: none !important;
+  font-family: "Heavites Regular";
+}
+
+.table tbody tr {
+  background-color: transparent !important;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #242424 !important;
+}
+
+.table td {
+  font-size: 18px;
+  color: #ddd !important;
+  border: none !important;
+  font-family: "Heavites Regular";
+  padding: 10px 0 0 0;
+}
+
+.btn-primary {
+  text-transform: uppercase;
+  padding: 8px 15px;
+  margin-bottom: 10px;
+  border-radius: 0;
+  border: none !important;
+}
+
+.table tbody tr:nth-child(odd) .btn-primary {
+  background-color: #242424 !important;
+}
+
+.table tbody tr:nth-child(even) .btn-primary {
+  background-color: #030303 !important;
+}
+
+@media screen and (max-width: 1420px) {
+  .social-icon {
+    visibility: hidden;
+  }
+}/*# sourceMappingURL=style.css.map */
